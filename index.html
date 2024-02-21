@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./content/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.5.0/web3.min.js" integrity="sha512-FhAl50BpK3gf9K//lbAWek9EEQEtGQyyXZNc1fuwcC2tVf2cskiJBcumXY0zJksYtms6S5cqubp1MNfUYTkO2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./app.js" type="module" defer></script>
+    <link rel="icon" type="image/x-icon" href="./content/images/favicon.ico">
+    <title>Block Explorer</title>
+</head>
+<body>
+    <header>
+        <img src="./content/images/logo.png" width="200px" height="200px" alt="">
+        <h1>Block Explorer</h1>
+    </header>
+    
+    <main>
+        <div>
+            <h2>Check balance of a wallet address</h2>
+            <label>
+                <input id="account" type="text" placeholder="Wallet address">
+                <span>Wallet address</span>
+            </label>
+            
+            <input type="submit" id="checkBalance" value="Check balance">
+            <div id="balance" class="balance"></div>
+          </div>
+        </div>
+        <div>
+            <h2>Submit a transaction</h2>
+            <label>
+                <input id="amount" type="text" placeholder="Amount in ETH">
+                <span>Amount in ETH</span>
+            </label>
+            <label>
+                <input id="toAccount" type="text" placeholder="To Wallet address">
+                <span>To Wallet address</span>
+            </label>
+            
+            <input type="submit" id="send" value="Send">
+            <div id="sendMsg" class="balance"></div>
+        </div>
+        <div>
+            <h2>Transactions from the latest block </h2>
+            <div id="transactions" class="transactionsHead"></div>
+        </div>
+    </main>
+</body>
+</html>
