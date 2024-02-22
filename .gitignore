@@ -4,6 +4,7 @@ dist-ssr
 
 # Local files
 *.local
+.vscode
 
 # JS ecosystem
 node_modules
