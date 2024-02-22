@@ -1,4 +1,3 @@
-// Import transaction functions
 import { checkBalance } from './balance.js';
 import { fetchLatestTransaction, createTransactionList } from './transaction.js';
 import { sendFunds } from './sendFunds.js';

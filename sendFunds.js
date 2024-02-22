@@ -1,4 +1,3 @@
-// sendFunds.js
 export async function sendFunds(ethereum, accountInput, toAccountInput, valueInput, displayMsg) {
     try {
         // Converting amount to wei

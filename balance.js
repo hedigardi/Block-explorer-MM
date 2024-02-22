@@ -1,4 +1,3 @@
-// balance.js
 export async function checkBalance(ethereum, displayBalance) {
     try {
         // Requesting access to the user's Ethereum accounts
